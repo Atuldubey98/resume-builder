@@ -14,7 +14,7 @@ export const AuthContextProvider = ({ children }) => {
     dispatch({ type: USER_LOADING });
     const unSubscribe = auth.onAuthStateChanged((user) => {
       if (user) {
-        dispatch({ type: USER_LOADED, user });
+        dispatch({ type: USER_LOADED, payload: user });
       } else {
         dispatch({ type: USER_ERROR, payload: null });
       }
