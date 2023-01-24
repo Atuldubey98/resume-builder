@@ -1,0 +1,25 @@
+.leftmenu__btn:hover {
+  opacity: 0.8;
+}
+
+.leftmenu__btn {
+  cursor: pointer;
+  width: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+}
+.leftmenu__btn i {
+  font-size: 1.8em;
+}
+.leftmenu__btn i:hover {
+  color: var(--primaryColor);
+}
+.selected {
+  background-color: var(--primaryColor);
+  color: white;
+}
+.selected i:hover {
+  color: white;
+}

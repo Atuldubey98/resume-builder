@@ -1,0 +1,16 @@
+.skill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.skill h5 {
+  flex: 2;
+}
+.skill__value {
+  flex: 10;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}

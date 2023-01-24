@@ -1,0 +1,19 @@
+.skill__info {
+  max-width: 600px;
+}
+.skill__info form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+.skill__value {
+  display: flex;
+  margin-left: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.skill__value span{
+    padding-right: 10px;
+}

@@ -1,0 +1,4 @@
+.input__layout {
+  display: flex;
+  flex-wrap: wrap;
+}

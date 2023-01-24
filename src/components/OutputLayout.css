@@ -1,0 +1,19 @@
+.output__layout {
+  width: 210mm;
+  min-height: 297mm;
+  background-color: white;
+  box-shadow: 0 0 10px lightgrey;
+  padding: 30px;
+}
+.output__layout h4 {
+  color: var(--primaryColor);
+}
+.output__layout h1 {
+  color: var(--primaryColor);
+}
+.output__layout i {
+  color: var(--primaryColor);
+}
+.output__layout h5 {
+  font-weight: bold;
+}

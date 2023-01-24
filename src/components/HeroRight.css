@@ -1,0 +1,11 @@
+.hero__right {
+  box-sizing: border-box;
+  width: 92%;
+  display: block;
+  background-image: url(../assets/heroRight.png);
+  height: 50vh;
+  background-size: contain;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  transform-origin: center center;
+}

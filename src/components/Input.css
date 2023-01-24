@@ -1,0 +1,19 @@
+.input__control {
+  display: grid;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(228, 220, 220);
+  margin: 2px;
+}
+.input__control:hover {
+  border: 1px solid darkgrey;
+}
+.input__control input {
+  outline: none;
+  border: none;
+}
+.input__control label {
+  font-size: 0.7rem;
+  text-transform: capitalize;
+}
+

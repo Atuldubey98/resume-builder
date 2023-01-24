@@ -1,0 +1,26 @@
+export const ON_CONTACT_CHANGE = "ON_CONTACT_CHANGE";
+export const ON_FIELD_CHANGE = "ON_FIELD_CHANGE";
+export const ON_FIELD_SET = "ON_FIELD_SET";
+
+export const ON_EXP_ADD = "ON_EXP_ADD";
+export const ON_EXP_CHANGE = "ON_EXP_CHANGE";
+
+export const ON_EDU_ADD = "ON_EDU_ADD";
+export const ON_EDU_CHANGE = "ON_EDU_CHANGE";
+
+export const ON_PROJECT_ADD = "ON_PROJECT_ADD";
+export const ON_PROJECT_CHANGE = "ON_PROJECT_CHANGE";
+
+export const ON_AWARDS_ADD = "ON_AWARDS_ADD";
+export const ON_AWARDS_CHANGE = "ON_AWARDS_CHANGE";
+
+export const ON_VOLUNTEERING_ADD = "ON_VOLUNTEERING_ADD";
+export const ON_VOLUNTEERING_CHANGE = "ON_VOLUNTEERING_CHANGE";
+
+export const ON_SKILL_ADD = "ON_SKILL_ADD";
+export const ON_SKILL_CHANGE = "ON_SKILL_CHANGE";
+
+export const ON_LANGUAGE_ADD = "ON_LANGUAGE_ADD";
+export const ON_LANGUAGE_CHANGE = "ON_LANGUAGE_CHANGE";
+
+export const ON_FIELD_REMOVE = "ON_FIELD_REMOVE";

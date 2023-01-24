@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;600;800&family=Nunito+Sans:wght@200;300;400;600;800&family=Poppins:wght@200;300;400;600;800&family=Unbounded:wght@200;300;400;600;800&display=swap");
+:root {
+  --darkFontColor: rgb(75, 71, 71);
+  --primaryColor: #3c2dff;
+  --fontFamily: "Poppins", "sans-serif";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--fontFamily);
+}
+.required__control {
+  color: red;
+}
+
+button {
+  border: 0;
+  outline: 0;
+  margin: 5px;
+  padding: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+button:hover {
+  opacity: 0.8;
+}
+
+input {
+  outline: none;
+  font-weight: 600;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

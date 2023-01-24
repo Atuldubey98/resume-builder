@@ -1,0 +1,6 @@
+.input__control textarea {
+  border: 0px;
+  outline: 0px;
+  cursor: text;
+  font-weight: 600;
+}

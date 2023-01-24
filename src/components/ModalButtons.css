@@ -1,0 +1,14 @@
+.modal__buttons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: small;
+}
+.close__button {
+  padding: 3px;
+}
+.close__button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

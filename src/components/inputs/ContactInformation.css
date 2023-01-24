@@ -1,0 +1,11 @@
+.contact__info h3 {
+  font-weight: bold;
+}
+.contact__info {
+  width: 300px;
+  padding: 8px;
+  box-shadow: 0 0 10px #888888;
+}
+.contact__info form {
+  display: grid;
+}

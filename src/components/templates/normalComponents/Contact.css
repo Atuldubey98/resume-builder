@@ -1,0 +1,16 @@
+.contact__name h1 {
+  font-weight: 800;
+  text-align: center;
+}
+.contact__name h1 span {
+  font-size: 1.2rem;
+}
+.contact__infomation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact {
+  padding-bottom: 8px;
+}
+

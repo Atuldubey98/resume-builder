@@ -1,0 +1,9 @@
+a {
+  text-decoration: none;
+  background-color: var(--primaryColor);
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 5px;
+  font-size: 1.1em;
+}

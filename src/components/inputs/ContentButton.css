@@ -1,0 +1,27 @@
+.content__button {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.btn span {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.content__button ul li {
+  list-style: none;
+  padding: 3px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.content__button ul li:hover {
+  background-color: lightgray;
+}

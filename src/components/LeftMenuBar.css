@@ -1,0 +1,13 @@
+.left__menuBar {
+  width: 5vw;
+  background-color: beige;
+}
+.left__menu {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.left__menu:has(div){
+    padding: 10px;
+}
