@@ -30,7 +30,7 @@ const AwardsInformation = ({ name }) => {
       value: title,
       onChange,
       style: {
-        width: "180px",
+        width: "230px",
       },
     },
     {
@@ -39,7 +39,7 @@ const AwardsInformation = ({ name }) => {
       value: receivedFrom,
       onChange,
       style: {
-        width: "180px",
+        width: "230px",
       },
     },
     {
@@ -48,7 +48,7 @@ const AwardsInformation = ({ name }) => {
       label: "Date or year Received",
       onChange,
       style: {
-        width: "180px",
+        width: "230px",
       },
     },
     {
@@ -58,7 +58,7 @@ const AwardsInformation = ({ name }) => {
       type: "url",
       onChange,
       style: {
-        width: "180px",
+        width: "230px",
       },
     },
   ];

@@ -4,6 +4,7 @@
   background-color: white;
   box-shadow: 0 0 10px lightgrey;
   padding: 30px;
+  word-wrap: break-word;
 }
 .output__layout h4 {
   color: var(--primaryColor);

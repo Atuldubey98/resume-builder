@@ -3,7 +3,7 @@ import "./TextArea.css";
 export const TextArea = (textAreaProps) => {
   const { label, name, onChange, value } = textAreaProps;
   return (
-    <div className="input__control">
+    <div className="textarea__control">
       <label htmlFor={label}>{label}</label>
       <textarea
         name={name}

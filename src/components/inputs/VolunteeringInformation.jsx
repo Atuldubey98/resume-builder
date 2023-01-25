@@ -33,7 +33,7 @@ function VolunteeringInformation({ name }) {
       label: "Title",
       onChange,
       style: {
-        width: "180px",
+        width: "230px",
       },
     },
     {
@@ -42,7 +42,7 @@ function VolunteeringInformation({ name }) {
       label: "Dates",
       onChange,
       style: {
-        width: "180px",
+        width: "230px",
       },
     },
     {
@@ -51,7 +51,7 @@ function VolunteeringInformation({ name }) {
       value: organization,
       onChange,
       style: {
-        width: "380px",
+        width: "485px",
       },
     },
   ];

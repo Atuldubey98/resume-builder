@@ -26,7 +26,7 @@ const ExpInformation = ({ name }) => {
       onChange,
       value: state.experience.title,
       style: {
-        width: "180px",
+        width: "230px",
       },
     },
     {
@@ -35,7 +35,7 @@ const ExpInformation = ({ name }) => {
       onChange,
       value: state.experience.company,
       style: {
-        width: "180px",
+        width: "230px",
       },
     },
     {
@@ -44,7 +44,7 @@ const ExpInformation = ({ name }) => {
       onChange,
       value: state.experience.dates,
       style: {
-        width: "180px",
+        width: "230px",
       },
     },
     {
@@ -53,7 +53,7 @@ const ExpInformation = ({ name }) => {
       onChange,
       value: state.experience.location,
       style: {
-        width: "180px",
+        width: "230px",
       },
     },
   ];

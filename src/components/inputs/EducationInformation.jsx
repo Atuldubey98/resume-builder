@@ -30,7 +30,7 @@ const EducationInformation = ({ name }) => {
       value: state.education.degree,
       onChange,
       style: {
-        width: "180px",
+        width: "230px",
       },
     },
     {
@@ -39,7 +39,7 @@ const EducationInformation = ({ name }) => {
       value: state.education.area,
       onChange,
       style: {
-        width: "180px",
+        width: "230px",
       },
     },
     {
@@ -48,7 +48,7 @@ const EducationInformation = ({ name }) => {
       label: "School or College",
       onChange,
       style: {
-        width: "180px",
+        width: "230px",
       },
     },
     {
@@ -57,7 +57,7 @@ const EducationInformation = ({ name }) => {
       label: "Dates",
       onChange,
       style: {
-        width: "180px",
+        width: "230px",
       },
     },
   ];

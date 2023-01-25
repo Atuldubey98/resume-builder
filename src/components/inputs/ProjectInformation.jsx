@@ -33,7 +33,7 @@ const ProjectInformation = ({ name }) => {
       value: title,
       onChange,
       style: {
-        width: "180px",
+        width: "230px",
       },
     },
     {
@@ -42,7 +42,7 @@ const ProjectInformation = ({ name }) => {
       value: type,
       onChange,
       style: {
-        width: "180px",
+        width: "230px",
       },
     },
     {
@@ -51,7 +51,7 @@ const ProjectInformation = ({ name }) => {
       label: "Project Date",
       onChange,
       style: {
-        width: "180px",
+        width: "230px",
       },
     },
     {
@@ -60,7 +60,7 @@ const ProjectInformation = ({ name }) => {
       label: "Reason or Purpose",
       onChange,
       style: {
-        width: "180px",
+        width: "230px",
       },
     },
   ];
