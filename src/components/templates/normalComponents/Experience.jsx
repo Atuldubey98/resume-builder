@@ -22,6 +22,7 @@ const Experience = () => {
     );
   }
   const { exps } = state;
+  console.log(exps);
   if (exps.length <= 0) {
     return null;
   }

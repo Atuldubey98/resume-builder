@@ -90,6 +90,7 @@ export const formInitialState = {
 export const formReducer = (state, action) => {
   const { name, formField, id, value } = action.payload;
   let index = -1;
+
   switch (action.type) {
     case ON_FIELD_SET: {
       return {
@@ -102,13 +103,14 @@ export const formReducer = (state, action) => {
     }
     case ON_FIELD_REMOVE: {
       if (Array.isArray(state[formField])) {
-        const index = state[formField].findIndex((field) => field.id === id);
+        index = state[formField].findIndex((field) => field.id === id);
+        console.log(index, id);
         if (index === -1) {
           return state;
         }
         return {
           ...state,
-          [formField]: state[formField].splice(index, 1),
+          [formField]: state[formField].filter((exp) => exp.id !== id),
         };
       } else if (typeof state[formField] === "string") {
         return {
