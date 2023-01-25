@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import Loading from "../components/Loading";
 import { USER_ERROR, USER_LOADING } from "../constants/authConstants";
 import { AuthContext } from "../contexts/AuthContext";
 import UserService from "../firebaseAPI/UserService";
@@ -54,7 +55,7 @@ export const LoginPage = () => {
           />
         </div>
         {userLoading ? (
-          <span>Loading...</span>
+          <Loading />
         ) : (
           <div className="input__buttons">
             <button type="submit">Login</button>

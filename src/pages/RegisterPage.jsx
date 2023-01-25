@@ -10,6 +10,7 @@ import {
   USER_LOADING,
 } from "../constants/authConstants";
 import UserService from "../firebaseAPI/UserService";
+import Loading from "../components/Loading";
 
 const RegisterPage = () => {
   const { state, dispatch: userDispatch } = useContext(AuthContext);
@@ -76,7 +77,7 @@ const RegisterPage = () => {
         </div>
         <div className="input__buttons">
           {state.loading ? (
-            <h2>Loading</h2>
+            <Loading />
           ) : (
             <button type="submit">Register</button>
           )}
