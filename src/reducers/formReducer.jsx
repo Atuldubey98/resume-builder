@@ -248,11 +248,12 @@ export const formReducer = (state, action) => {
       };
     case ON_LANGUAGE_ADD:
       index = state.languages.findIndex((exp) => exp.id === id);
+      console.log(index, id);
       if (index === -1) {
         return {
           ...state,
           languages: [...state.languages, action.payload],
-          langauge: formInitialState.language,
+          language: formInitialState.language,
         };
       }
       state.languages[index] = action.payload;

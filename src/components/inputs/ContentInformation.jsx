@@ -1,19 +1,18 @@
 import React, { useContext } from "react";
 import { UIContext } from "../../contexts/UIContext";
 import AddModal from "../AddModal";
+import AwardsInformation from "./AwardsInformation";
 import ContentButton from "./ContentButton";
 import "./ContentInformation.css";
-import ExpInformation from "./ExpInformation";
 import EducationInformation from "./EducationInformation";
+import ExpInformation from "./ExpInformation";
+import LanguageInformation from "./LanguageInformation";
 import ProfileInformation from "./ProfileInformation";
 import ProjectInformation from "./ProjectInformation";
-import AwardsInformation from "./AwardsInformation";
 import VolunteeringInformation from "./VolunteeringInformation";
+
+import { CONTENT_INFORMATION_NUMBER } from "../../constants/uiConstants";
 import SkillInformation from "./SkillInformation";
-import {
-  CONTENT_INFORMATION_NUMBER,
-  ON_TOGGLE_CONTENT,
-} from "../../constants/uiConstants";
 
 const ContentInformation = () => {
   const { state } = useContext(UIContext);
@@ -46,6 +45,10 @@ const ContentInformation = () => {
     {
       name: "Skills",
       component: <SkillInformation name="Skills" />,
+    },
+    {
+      name: "Languages Known",
+      component: <LanguageInformation name="Languages" />,
     },
   ];
   const contentButton = {

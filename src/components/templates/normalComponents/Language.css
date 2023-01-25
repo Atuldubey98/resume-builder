@@ -1,0 +1,6 @@
+.language {
+  display: flex;
+}
+.language__value {
+  font-weight: 600;
+}

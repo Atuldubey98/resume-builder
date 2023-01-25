@@ -33,6 +33,10 @@ const WrapperEditDelete = ({ object, children }) => {
       index: 6,
       name: "skill",
     },
+    languages: {
+      index: 7,
+      name: "language",
+    },
   };
   const buttons = [
     {

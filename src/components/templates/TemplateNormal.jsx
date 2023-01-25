@@ -8,8 +8,8 @@ import "./TemplateNormal.css";
 import Project from "./normalComponents/Project";
 import Skill from "./normalComponents/Skill";
 import Volunteering from "./normalComponents/Volunteering";
+import Language from "./normalComponents/Language";
 const TemplateNormal = () => {
-  
   return (
     <div className="template__normal">
       <Contact />
@@ -20,6 +20,7 @@ const TemplateNormal = () => {
       <Award />
       <Skill />
       <Volunteering />
+      <Language />
     </div>
   );
 };

@@ -4,7 +4,6 @@
 .btn__set {
   display: none;
   position: absolute;
-  transform: translate(50%, 50%);
 }
 .btn__set button {
   background-color: rgb(122, 117, 117);
