@@ -59,8 +59,6 @@ const WrapperEditDelete = ({ object, children }) => {
       ),
       onClick: function () {
         const { id, formField } = object;
-        console.log(formField);
-        console.log(formMap);
         const { name, index } = formMap[formField];
         formDispatch({ type: ON_FIELD_SET, payload: { name, id, formField } });
         uiDispatch({

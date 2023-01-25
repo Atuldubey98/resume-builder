@@ -211,6 +211,7 @@ export const formReducer = (state, action) => {
       Object.keys(state.award).forEach((key) => {
         award[key] = isNaN(state.award[key]) ? "" : 0;
       });
+      console.log(award);
       if (index === -1) {
         return {
           ...state,
