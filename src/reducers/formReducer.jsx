@@ -87,6 +87,7 @@ export const formInitialState = {
   exps: [],
   projects: [],
 };
+
 export const formReducer = (state, action) => {
   const { name, formField, id, value } = action.payload;
   let index = -1;
@@ -95,19 +96,11 @@ export const formReducer = (state, action) => {
     case ON_FIELD_SET: {
       return {
         ...state,
-        [name]:
-          state[formField][
-            state[formField].findIndex((field) => field.id === id)
-          ],
+        [name]: state[formField].filter((field) => field.id === id)[0],
       };
     }
     case ON_FIELD_REMOVE: {
       if (Array.isArray(state[formField])) {
-        index = state[formField].findIndex((field) => field.id === id);
-        console.log(index, id);
-        if (index === -1) {
-          return state;
-        }
         return {
           ...state,
           [formField]: state[formField].filter((exp) => exp.id !== id),
@@ -132,21 +125,18 @@ export const formReducer = (state, action) => {
       };
     case ON_EXP_ADD:
       index = state.exps.findIndex((exp) => exp.id === id);
-      const experience = {};
-      Object.keys(state.experience).forEach((key) => {
-        experience[key] = isNaN(state.experience[key]) ? "" : 0;
-      });
+
       if (index === -1) {
         return {
           ...state,
-          experience,
+          experience: formInitialState.experience,
           exps: [...state.exps, action.payload],
         };
       }
       state.exps[index] = action.payload;
       return {
         ...state,
-        experience,
+        experience: formInitialState.experience,
       };
     case ON_EXP_CHANGE:
       return {
@@ -161,21 +151,17 @@ export const formReducer = (state, action) => {
     case ON_EDU_ADD:
       index = state.edus.findIndex((exp) => exp.id === id);
 
-      const education = {};
-      Object.keys(state.education).forEach((key) => {
-        education[key] = isNaN(state.education[key]) ? "" : 0;
-      });
       if (index === -1) {
         return {
           ...state,
           edus: [...state.edus, action.payload],
-          education,
+          education: formInitialState.education,
         };
       }
       state.edus[index] = action.payload;
       return {
         ...state,
-        education,
+        education: formInitialState.education,
       };
     case ON_PROJECT_CHANGE:
       return {
@@ -184,22 +170,17 @@ export const formReducer = (state, action) => {
       };
     case ON_PROJECT_ADD:
       index = state.projects.findIndex((exp) => exp.id === id);
-
-      const project = {};
-      Object.keys(state.project).forEach((key) => {
-        project[key] = isNaN(state.project[key]) ? "" : 0;
-      });
       if (index === -1) {
         return {
           ...state,
           projects: [...state.projects, action.payload],
-          project,
+          project: formInitialState.project,
         };
       }
       state.projects[index] = action.payload;
       return {
         ...state,
-        project,
+        project: formInitialState.project,
       };
     case ON_AWARDS_CHANGE:
       return {
@@ -208,23 +189,17 @@ export const formReducer = (state, action) => {
       };
     case ON_AWARDS_ADD:
       index = state.awards.findIndex((exp) => exp.id === id);
-
-      const award = {};
-      Object.keys(state.award).forEach((key) => {
-        award[key] = isNaN(state.award[key]) ? "" : 0;
-      });
-      console.log(award);
       if (index === -1) {
         return {
           ...state,
           awards: [...state.awards, action.payload],
-          award,
+          award: formInitialState.award,
         };
       }
       state.awards[index] = action.payload;
       return {
         ...state,
-        award,
+        award: formInitialState.award,
       };
     case ON_VOLUNTEERING_CHANGE:
       return {
@@ -234,21 +209,17 @@ export const formReducer = (state, action) => {
     case ON_VOLUNTEERING_ADD:
       index = state.volunteerings.findIndex((exp) => exp.id === id);
 
-      const volunteering = {};
-      Object.keys(state.volunteering).forEach((key) => {
-        volunteering[key] = isNaN(state.volunteering[key]) ? "" : 0;
-      });
       if (index === -1) {
         return {
           ...state,
           volunteerings: [...state.volunteerings, action.payload],
-          volunteering,
+          volunteering: formInitialState.volunteering,
         };
       }
       state.volunteerings[index] = action.payload;
       return {
         ...state,
-        volunteering,
+        volunteering: formInitialState.volunteering,
       };
     case ON_SKILL_CHANGE:
       return {
@@ -258,21 +229,17 @@ export const formReducer = (state, action) => {
     case ON_SKILL_ADD:
       index = state.skills.findIndex((exp) => exp.id === id);
 
-      const skill = {};
-      Object.keys(state.skill).forEach((key) => {
-        skill[key] = isNaN(state.skill[key]) ? "" : 0;
-      });
       if (index === -1) {
         return {
           ...state,
           skills: [...state.skills, action.payload],
-          skill,
+          skill: formInitialState.skill,
         };
       }
       state.skills[index] = action.payload;
       return {
         ...state,
-        skill,
+        skill: formInitialState.skill,
       };
     case ON_LANGUAGE_CHANGE:
       return {
@@ -281,22 +248,17 @@ export const formReducer = (state, action) => {
       };
     case ON_LANGUAGE_ADD:
       index = state.languages.findIndex((exp) => exp.id === id);
-
-      const langauge = {};
-      Object.keys(state.langauge).forEach((key) => {
-        langauge[key] = isNaN(state.langauge[key]) ? "" : 0;
-      });
       if (index === -1) {
         return {
           ...state,
           languages: [...state.languages, action.payload],
-          langauge,
+          langauge: formInitialState.language,
         };
       }
       state.languages[index] = action.payload;
       return {
         ...state,
-        langauge,
+        langauge: formInitialState.language,
       };
     default:
       break;
