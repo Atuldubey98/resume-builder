@@ -1,4 +1,5 @@
 button {
   background-color: var(--primaryColor);
   color: white;
+  font-weight: bold;
 }

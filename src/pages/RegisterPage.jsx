@@ -23,6 +23,10 @@ const RegisterPage = () => {
       navigate("/designer", { replace: true });
     } catch (error) {
       userDispatch({ type: USER_ERROR, payload: `Error occured !` });
+      setTimeout(() => {
+        userDispatch({ type: USER_ERROR, payload: `` });
+      }, 2000);
+      u;
     }
   };
   const onInputChange = (e) => {
@@ -81,7 +85,7 @@ const RegisterPage = () => {
           ) : (
             <button type="submit">Register</button>
           )}
-          <Link to={"/login"}>Login</Link>
+          <Link to={"/login"}>Login Instead ?</Link>
         </div>
       </form>
     </div>

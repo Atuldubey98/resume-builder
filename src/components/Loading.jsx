@@ -1,15 +1,8 @@
 import React from "react";
-import ReactLoading from "react-loading";
+import LoadingIndicator from "react-loading-indicator";
+import './Loading.css'
 const Loading = () => {
-  return (
-    <ReactLoading
-      type="balls"
-      color="#ffffff"
-      height={"64px"}
-      width={"64px"}
-      delay={0}
-    />
-  );
+  return <LoadingIndicator className="loading" />;
 };
 
 export default Loading;

@@ -7,6 +7,10 @@
 
 .register__page form {
   animation: fadeIn 1s;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 form .error__message {
   background-color: rgb(202, 51, 51);
@@ -15,6 +19,7 @@ form .error__message {
   border-radius: 5px;
   animation: 1s fadeIn;
   text-align: center;
+  display: flex;
 }
 .register__page form button {
   background-color: rgb(92, 228, 92);
@@ -23,18 +28,6 @@ form .error__message {
 
 .register__page form a {
   font-weight: bold;
-}
-.input__buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.input__buttons button {
-  flex: 4;
-}
-.input__buttons a {
-  flex: 8;
-  text-align: right;
 }
 @media only screen and (max-width: 400) {
   .input__control input {

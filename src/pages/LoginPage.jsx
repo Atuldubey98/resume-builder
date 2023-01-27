@@ -23,6 +23,9 @@ export const LoginPage = () => {
       navigate("/designer", { replace: true });
     } catch (error) {
       userDispatch({ type: USER_ERROR, payload: `Some error occured !` });
+      setTimeout(() => {
+        userDispatch({ type: USER_ERROR, payload: `` });
+      }, 2000);
     }
   };
   useEffect(() => {

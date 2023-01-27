@@ -8,6 +8,10 @@
 .login__page form {
   animation: fadeIn 0.7s;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 form .error__message {
   animation: 0.5s fadeIn;
@@ -24,18 +28,8 @@ form .error__message {
 .login__page form a {
   font-weight: bold;
 }
-.input__buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.input__buttons button {
-  flex: 4;
-}
-.input__buttons a {
-  flex: 8;
-  text-align: right;
-}
+
+
 @media only screen and (max-width: 400px) {
   .input__control input {
     max-width: 200px;
