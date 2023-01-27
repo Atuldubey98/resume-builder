@@ -1,23 +1,9 @@
-import React, { useContext } from "react";
+import React from "react";
+import usePrint from "../../hooks/usePrint";
 import Button from "../Button";
 import "./SaveOrPrint.css";
-import { useReactToPrint } from "react-to-print";
-import { UIContext } from "../../contexts/UIContext";
 const SaveOrPrint = () => {
-  const { printRef } = useContext(UIContext);
-  const buttonProps = {
-    text: "Save & Print",
-    icon: <i className="fa-sharp fa-solid fa-download" />,
-    onClick: useReactToPrint({
-      content: () => {
-        printRef.current.style.boxShadow = "none";
-        setTimeout(() => {
-          printRef.current.style.boxShadow = "0 0 10px lightgrey";
-        }, 2000);
-        return printRef.current;
-      },
-    }),
-  };
+  const {buttonProps} = usePrint();
   return (
     <div className="save__print">
       <h2>Save & Print</h2>

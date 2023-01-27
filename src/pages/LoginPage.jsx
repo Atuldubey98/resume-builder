@@ -1,12 +1,14 @@
 import React, { useContext, useEffect, useRef } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import Button from "../components/Button";
+import { ButtonWithIcon } from "../components/ButtonWithIcon";
 import Loading from "../components/Loading";
 import { USER_ERROR, USER_LOADING } from "../constants/authConstants";
+import { loginButtonProps, registerLinkProps } from "../constants/propConstants";
 import { AuthContext } from "../contexts/AuthContext";
 import UserService from "../firebaseAPI/UserService";
 import "./LoginPage.css";
 export const LoginPage = () => {
-  console.log("Login Re rendering");
   const emailRef = useRef();
   const passwordRef = useRef();
   const { state, dispatch: userDispatch } = useContext(AuthContext);
@@ -31,6 +33,7 @@ export const LoginPage = () => {
   useEffect(() => {
     emailRef.current.focus();
   }, []);
+
   return (
     <div className="login__page">
       <form autoComplete="off" onSubmit={onLoginSubmit} spellCheck="false">
@@ -62,8 +65,8 @@ export const LoginPage = () => {
           <Loading />
         ) : (
           <div className="input__buttons">
-            <button type="submit">Login</button>
-            <Link to={"/register"}>Register instead ?</Link>
+            <Button {...loginButtonProps} />
+            <ButtonWithIcon {...registerLinkProps} />
           </div>
         )}
         {error && (

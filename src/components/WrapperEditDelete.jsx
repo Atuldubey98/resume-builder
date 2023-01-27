@@ -6,7 +6,7 @@ import { FormContext } from "../contexts/FormContext";
 import { UIContext } from "../contexts/UIContext";
 import "./WrapperEditDelete.css";
 const WrapperEditDelete = ({ object, children }) => {
-  const { state: uiState, formDispatch } = useContext(FormContext);
+  const { formDispatch } = useContext(FormContext);
   const { uiDispatch } = useContext(UIContext);
   const formMap = {
     exps: {

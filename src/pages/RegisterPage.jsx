@@ -11,6 +11,12 @@ import {
 } from "../constants/authConstants";
 import UserService from "../firebaseAPI/UserService";
 import Loading from "../components/Loading";
+import Button from "../components/Button";
+import {
+  loginLinkProps,
+  registerButtonProps,
+} from "../constants/propConstants";
+import { ButtonWithIcon } from "../components/ButtonWithIcon";
 
 const RegisterPage = () => {
   const { state, dispatch: userDispatch } = useContext(AuthContext);
@@ -80,12 +86,8 @@ const RegisterPage = () => {
           </span>
         </div>
         <div className="input__buttons">
-          {state.loading ? (
-            <Loading />
-          ) : (
-            <button type="submit">Register</button>
-          )}
-          <Link to={"/login"}>Login Instead ?</Link>
+          {state.loading ? <Loading /> : <Button {...registerButtonProps} />}
+          <ButtonWithIcon {...loginLinkProps} />
         </div>
       </form>
     </div>
