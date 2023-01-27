@@ -9,7 +9,7 @@ const Skill = () => {
     const { name, value } = skill;
     return (
       <div className="skill">
-        <h5>{name}</h5>
+        <h3>{name}</h3>
         <div className="skill__value">
           {Array.from(Array(parseInt(value)).keys()).map((val) => {
             return <i key={val} className="fa-solid fa-star skill__star" />;

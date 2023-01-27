@@ -10,7 +10,7 @@ const Language = () => {
   }
   return (
     <div className="lang">
-      <h4>Languages Known</h4>
+      <h3>Languages Known</h3>
       <div className="languages">
         {languages.map((language) => (
           <WrapperEditDelete

@@ -27,7 +27,7 @@ const Project = () => {
   }
   return (
     <div className="projects">
-      <h4>Projects</h4>
+      <h3>Projects</h3>
       {projects.map((project) => (
         <WrapperEditDelete
           key={project.id}

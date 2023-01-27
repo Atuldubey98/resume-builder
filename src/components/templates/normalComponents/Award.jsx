@@ -26,7 +26,7 @@ const Award = () => {
   }
   return (
     <div className="awards">
-      <h4>Awards</h4>
+      <h3>Awards</h3>
       {awards.map((award) => (
         <WrapperEditDelete
           key={award.id}

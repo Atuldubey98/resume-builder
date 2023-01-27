@@ -17,7 +17,7 @@ const Profile = () => {
       }
       className="profile"
     >
-      <h4>Profile/Summary</h4>
+      <h3>Profile/Summary</h3>
       <p>{state.profileSummary}</p>
     </div>
   );

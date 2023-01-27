@@ -27,7 +27,7 @@ const Experience = () => {
   }
   return (
     <div className="experience">
-      <h4>Work & Experience</h4>
+      <h3>Work & Experience</h3>
       {exps.map((exp) => (
         <WrapperEditDelete
           key={exp.id}

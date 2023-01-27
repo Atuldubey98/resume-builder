@@ -32,7 +32,6 @@ const RegisterPage = () => {
       setTimeout(() => {
         userDispatch({ type: USER_ERROR, payload: `` });
       }, 2000);
-      u;
     }
   };
   const onInputChange = (e) => {
@@ -53,8 +52,10 @@ const RegisterPage = () => {
           <input
             ref={emailRef}
             type="email"
+            autoComplete="off"
             placeholder="Email"
             name="email"
+            required
             onChange={onInputChange}
             value={state.email}
           />
@@ -65,6 +66,7 @@ const RegisterPage = () => {
           </label>
           <input
             type="password"
+            required
             placeholder="Password"
             name="password"
             onChange={onInputChange}

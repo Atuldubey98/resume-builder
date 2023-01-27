@@ -77,7 +77,7 @@ export const formInitialState = {
   language: {
     id: 0,
     name: "",
-    value: 0,
+    value: 1,
   },
   languages: [],
   skills: [],
