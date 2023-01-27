@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./ButtonWithIcon.css";
 export const ButtonWithIcon = (buttonProps) => {
-  const { text, to, icon } = buttonProps;
+  const { text,icon , ...restProps } = buttonProps;
   return (
-    <Link to={to}>
+    <Link {...restProps}>
       {icon}
       {text}
     </Link>
