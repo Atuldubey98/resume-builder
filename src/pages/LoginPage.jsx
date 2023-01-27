@@ -6,6 +6,7 @@ import { AuthContext } from "../contexts/AuthContext";
 import UserService from "../firebaseAPI/UserService";
 import "./LoginPage.css";
 export const LoginPage = () => {
+  console.log("Login Re rendering");
   const emailRef = useRef();
   const passwordRef = useRef();
   const { state, dispatch: userDispatch } = useContext(AuthContext);

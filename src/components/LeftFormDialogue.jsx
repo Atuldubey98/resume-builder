@@ -9,7 +9,6 @@ import SaveOrPrint from "./inputs/SaveOrPrint";
 import "./LeftFormDialogue.css";
 export const LeftFormDialogue = () => {
   const { state } = useContext(UIContext);
-  useEffect(() => {}, [state.menuNumber]);
   const totalForms = [
     <ContactInformation />,
     <ContentInformation />,
